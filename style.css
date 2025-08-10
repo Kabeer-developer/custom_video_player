@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.player {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+.progress-container {
+    flex: 1;
+    height: 10px;
+    background: #444;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: rgb(236, 15, 15);
+    width: 0%;
+    border-radius: 4px;
+}
+
+button {
+    background: #4ade80;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="range"] {
+    width: 80px;
+}
